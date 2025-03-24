@@ -23,7 +23,6 @@ contract DAOCommitteeProxy is StorageStateCommittee, AccessControl, ERC165Storag
         address _layer2Registry,
         address _agendaManager,
         address _candidateFactory,
-        //address _activityRewardManager,
         address _daoVault
     )
     {

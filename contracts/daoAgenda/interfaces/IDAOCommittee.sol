@@ -2,7 +2,9 @@
 pragma solidity ^0.8.4;
 pragma abicoder v2;
 
-interface IDAOCommittee {
+import { IStorageStateCommittee } from "../interfaces/IStorageStateCommittee.sol";
+
+interface IDAOCommittee is IStorageStateCommittee {
     //--owner
     function setSeigManager(address _seigManager) external;
     function setCandidatesSeigManager(address[] calldata _candidateContracts, address _seigManager) external;

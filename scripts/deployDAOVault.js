@@ -1,8 +1,8 @@
 const { ethers } = require("hardhat");
 
 async function main() {
-    let wton = "0x3FC550D4C381c170D83077c27ff8637a12cE48Fa"    
     let ton = "0x33a66929dE3559315c928556FcFF449b3E708c62"
+    let wton = "0x3FC550D4C381c170D83077c27ff8637a12cE48Fa"    
 
 
     const [deployer] = await ethers.getSigners();
