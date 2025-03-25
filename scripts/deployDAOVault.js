@@ -13,26 +13,11 @@ async function main() {
         ton,
         wton
     )
-    console.log("1")
+
     await DAOVaultDeployed.waitForDeployment();
     const deployedAddress2 = await DAOVaultDeployed.getAddress()
     console.log("DAOVault deployed at:", deployedAddress2)
 
-    // const DAOCommitteeProxyDep = await ethers.getContractFactory("DAOCommitteeProxy");
-    // const DAOCommitteeProxy = await DAOCommitteeProxyDep.deploy(
-    //     ton,
-    //     proxyimpl,
-    //     seigManager,
-    //     layer2Registry,
-    //     agendaManager,
-    //     candidateFactory,
-    //     daoVault
-    // )
-
-    // await DAOCommitteeProxy.waitForDeployment();
-
-    // const deployedAddress3 = await DAOCommitteeProxy.getAddress()
-    // console.log("DAOCommitteeProxy deployed at:", deployedAddress3)
 }
 
 main()
